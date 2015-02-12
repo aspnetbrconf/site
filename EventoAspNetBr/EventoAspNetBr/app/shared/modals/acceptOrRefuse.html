@@ -1,0 +1,18 @@
+﻿<div class="modal-header">
+    <h4 class='modal-title'><i class="fa fa-exclamation-triangle fa-fw fa-align-center"></i> {{title}}</h4>   
+</div>
+
+<div class='modal-body modal-contentGray'>
+    <div class="form-group clearfix">
+        <h3> {{message}} </h3>
+        <h6 class="text-style-message"> {{extraMessage}} </h6>
+    </div>
+</div>
+
+<div class="modal-footer background-lightgray">
+    <div style="padding: 0 15px 15px 0 !important;">
+        <button class="btn btn-success" ng-disabled='SaveUserForm.$invalid' ng-click='ok()'>Aceitar</button>
+        ou
+        <a title="Cancelar" ng-click='cancel()'>Cancelar</a>
+    </div>
+</div>

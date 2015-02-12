@@ -1,0 +1,72 @@
+﻿<div data-ng-controller="shell as vm">
+    <header id="header">
+        <div ng-include="'app/layout/topnav.html'"></div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div style="margin-top: 20px" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <ul id="side-menu" class="nav nav-pills nav-stacked">
+                    <li ng-class="{active : menuPanels }">
+                        <a href="#panels">
+                            <i class="fa fa-pie-chart" ng-if="menuPanels" style="color: #228b22;"></i>
+                            <i class="fa fa-pie-chart" ng-if="!menuPanels"></i>
+                            Painel
+                        </a>
+                    </li>
+                    <!--<li ng-class="{active : menuStrategicMap }">
+                        <a href="#strategicMap">
+                            <i class="fa fa-sitemap" ng-if="menuStrategicMap" style="color: #228b22;"></i>
+                            <i class="fa fa-sitemap" ng-if="!menuStrategicMap"></i>
+                            Mapa Estratégico
+                        </a>
+                    </li>-->
+                    <li ng-class="{active : menuObjective }">
+                        <a href="#objectives">
+                            <i class="fa fa-check-square-o" ng-if="menuObjective" style="color: #228b22;"></i>
+                            <i class="fa fa-check-square-o" ng-if="!menuObjective"></i>
+                            Objetivos
+                        </a>
+                    </li>
+                    <li ng-class="{active : menuGoal }">
+                        <a href="#goals">
+                            <i class="fa fa-crosshairs" ng-if="menuGoal" style="color: #228b22;"></i>
+                            <i class="fa fa-crosshairs" ng-if="!menuGoal"></i>
+                            Metas
+                        </a>
+                    </li>
+                    <li ng-class="{active : menuIndicator }">
+                        <a href="#indicators">
+                            <i class="fa fa-map-marker" ng-if="menuIndicator" style="color: #228b22;"></i>
+                            <i class="fa fa-map-marker" ng-if="!menuIndicator"></i>
+                            Indicadores
+                        </a>
+                    </li>
+                    <li ng-class="{active : menuPerspective }">
+                        <a href="#perspectives">
+                            <i class="fa fa-line-chart" ng-if="menuPerspective" style="color: #228b22;"></i>
+                            <i class="fa fa-line-chart" ng-if="!menuPerspective"></i>
+                            Perspectivas
+                        </a>
+                    </li>
+                    <li ng-class="{active : menuUser }">
+                        <a href="#users">
+                            <i class="fa fa-users" ng-if="menuUser" style="color: #228b22;"></i>
+                            <i class="fa fa-users" ng-if="!menuUser"></i>
+                            Usuários
+                        </a>
+                    </li>
+                    
+                </ul>                                                      
+
+            </div>
+          
+
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 content-side">
+                <div id="content" ng-view></div>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
