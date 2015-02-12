@@ -1,47 +1,566 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-br" ng-app="app">
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+    <title>ASP.NET Brasil Conference 2015</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Justified Nav Template for Bootstrap</title>
+    <!--== CSS Files ==-->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/animate.min.css" rel="stylesheet" media="screen">
+    <link href="css/font-awesome.css" rel="stylesheet" media="screen">
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/flexslider.css" rel="stylesheet" media="screen">
+    <link href="css/fancySelect.css" rel="stylesheet" media="screen">
+    <link href="css/responsive.css" rel="stylesheet" media="screen">
 
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/site.css" rel="stylesheet" />
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!--== Google Fonts ==-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
+
 </head>
-
 <body>
-    <div class="container">
-        <div ng-include="'app/shared/header.html'"></div>
+    <header id="header">
+        <div id="menu" class="header-menu fixed">
+            <div class="container box">
+                <div class="row">
+                    <nav role="navigation" class="col-sm-12">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
 
-        <div ng-view></div>
+                            <!--== Logo ==-->
+                            <span class="navbar-brand logo">
+                                <img src="img/logo-aspnetbr.png" />
+                            </span>
 
-        <div ng-include="'app/shared/footer.html'"></div>
+                        </div>
+                        <div class="navbar-collapse collapse">
+
+                            <!--== Navigation Menu ==-->
+                            <ul class="nav navbar-nav">
+                                <li class="current"><a href="#header">Home</a></li>
+                                <li><a href="#schedule">Programação</a></li>
+                                <li><a href="#subscribe">Inscrições</a></li>
+                                <li><a href="#speakers">Palestrantes</a></li>
+                                <li><a href="#partners">Patrocinadores</a></li>
+                                <li><a href="#local">Localização</a></li>
+                                <li><a href="#contact">Contato</a></li>
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!--== Site Description ==-->
+        <div class="header-cta">
+            <div class="container">
+                <div class="row">
+                    <div class="blk">
+                        <h1>ASP.NET Brasil <br />Conference 2015</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="blk">
+                        <a class="btn btn-primary btn-lg" href="https://www.sympla.com.br/aspnet-brasil-conference---2015__28909" target="_blank">Inscreva-se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bg">
+            <div id="preloader">
+                <div class="preloader"></div>
+            </div>
+            <div class="main-slider" id="main-slider">
+
+                <!--== Main Slider ==-->
+                <ul class="slides">
+                    <li><img src="img/slides/main-slide-1.jpg" alt="Slide Image" /></li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="container box">
+
+
+            <!--===============================-->
+            <!--== Features ===================-->
+            <!--===============================-->
+            <section id="features" class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="event-info">
+                        <div class="icon fa fa-map-marker"></div>
+                        <div class="info">
+                            <h3>São Paulo</h3>
+                            <span>Teatro Copi, FIAP.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="event-info">
+                        <div class="icon fa fa-calendar"></div>
+                        <div class="info">
+                            <h3>16 de Maio</h3>
+                            <span>8h as 17h.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="event-info">
+                        <div class="icon fa fa-microphone"></div>
+                        <div class="info">
+                            <h3>6 Palestrantes</h3>
+                            <span>ASP.NET MVP.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="event-info">
+                        <div class="icon fa fa-users"></div>
+                        <div class="info">
+                            <h3>400 Lugares</h3>
+                            <span>Corra, inscreva-se!</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--==========-->
+            <!--===============================-->
+            <!--== Schedule ===================-->
+            <!--===============================-->
+            <section id="schedule" class="row">
+                <div class="col-md-7 col-sm-12">
+                    <div class="content-tabs">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1" data-toggle="tab">Manhã</a></li>
+                            <li><a href="#tab2" data-toggle="tab">Tarde</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab1">
+                                <ul class="accordion-group">
+                                    <li class="accordion">
+                                        <a class="accordion-heading">
+                                            <time>08:00</time>
+                                            <h4 class="accordion-title">Welcome Coffee</h4>
+                                            <!--<span class="fa fa-plus-circle pull-right"></span>-->
+                                        </a>
+                                        <!--<div class="accordion-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+                                        </div>-->
+                                    </li>
+                                    <li class="accordion">
+                                        <a class="accordion-heading">
+                                            <time>09:00</time>
+                                            <h4 class="accordion-title">Keynote</h4>
+                                            <!--<span class="fa fa-plus-circle pull-right"></span>-->
+                                        </a>
+                                        <!--<div class="accordion-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+                                        </div>-->
+                                    </li>
+                                    <li class="accordion">
+                                        <a class="accordion-heading">
+                                            <time>09:30</time>
+                                            <h4 class="accordion-title">Alexandre Tarifa (MVP) / Rodolfo Fadino (MVP)</h4>
+                                        </a>
+                                    </li>
+                                    <li class="accordion">
+                                        <a class="accordion-heading">
+                                            <time>10:10</time>
+                                            <h4 class="accordion-title">André Baltieri (MVP)</h4>
+                                        </a>
+                                    </li>
+                                    <li class="accordion">
+                                        <a class="accordion-heading">
+                                            <time>10:50</time>
+                                            <h4 class="accordion-title">Eduardo Pires (MVP)</h4>
+                                        </a>
+                                    </li>
+                                    <li class="accordion">
+                                        <a class="accordion-heading">
+                                            <time>12:10</time>
+                                            <h4 class="accordion-title">Almoço</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                                <ul class="accordion-group">
+
+
+                                    <li class="accordion">
+                                        <a class="accordion-heading">
+                                            <time>13:30</time>
+                                            <h4 class="accordion-title">Rodrigo Kono (MVP)</h4>
+                                        </a>
+                                    </li>
+                                    <li class="accordion">
+                                        <a class="accordion-heading">
+                                            <time>14:10</time>
+                                            <h4 class="accordion-title">Victor Cavalcante (MVP)</h4>
+                                        </a>
+                                    </li>
+                                    <li class="accordion">
+                                        <a class="accordion-heading">
+                                            <time>14:50</time>
+                                            <h4 class="accordion-title">Waldyr Felix (MVP)</h4>
+                                        </a>
+                                    </li>
+                                    <li class="accordion">
+                                        <a class="accordion-heading">
+                                            <time>15:30</time>
+                                            <h4 class="accordion-title">Giovanni Bassi (MVP)</h4>
+                                        </a>
+                                    </li>
+                                    <li class="accordion">
+                                        <a class="accordion-heading">
+                                            <time>16:10</time>
+                                            <h4 class="accordion-title">Encerramento - Sorteio de Prêmios</h4>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <h2>Schedule</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, error, et. Cupiditate, necessitatibus, ab, nemo commodi quod unde facere doloribus voluptatibus recusandae quibusdam molestiae excepturi corrupti quae! Dolor, deserunt, consequuntur.</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Vero, deleniti, provident beatae illo accusantium</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    </ul>
+                </div>
+            </section>
+
+           
+
+
+            <!--==========-->
+            <!--===============================-->
+            <!--== Speakers ===================-->
+            <!--===============================-->
+            <section id="speakers" class="row separated">
+                <div class="col-sm-12">
+                    <div class="section-header text-center">
+                        <h2>Speakers</h2>
+                        <h4>Awesome section description goes here.</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="speaker">
+                        <div class="speaker-info">
+                            <div class="speaker-photo">
+                                <img src="images/demo/speakers/speaker-01.jpg" alt="Speaker 1">
+                            </div>
+                            <div class="speaker-contacts">
+                                <a href="#" class="contact pull-left fa fa-facebook"></a>
+                                <a href="#" class="contact pull-right fa fa-twitter"></a>
+                            </div>
+                        </div>
+                        <h3>Jane Doe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="speaker">
+                        <div class="speaker-info">
+                            <div class="speaker-photo">
+                                <img src="images/demo/speakers/speaker-02.jpg" alt="Speaker 2">
+                            </div>
+                            <div class="speaker-contacts">
+                                <a href="#" class="contact pull-left fa fa-facebook"></a>
+                                <a href="#" class="contact pull-right fa fa-twitter"></a>
+                            </div>
+                        </div>
+                        <h3>Michele Doe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="speaker">
+                        <div class="speaker-info">
+                            <div class="speaker-photo">
+                                <img src="images/demo/speakers/speaker-03.jpg" alt="Speaker 3">
+                            </div>
+                            <div class="speaker-contacts">
+                                <a href="#" class="contact pull-left fa fa-facebook"></a>
+                                <a href="#" class="contact pull-right fa fa-twitter"></a>
+                            </div>
+                        </div>
+                        <h3>John Doe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="speaker">
+                        <div class="speaker-info">
+                            <div class="speaker-photo">
+                                <img src="images/demo/speakers/speaker-04.jpg" alt="Speaker 4">
+                            </div>
+                            <div class="speaker-contacts">
+                                <a href="#" class="contact pull-left fa fa-facebook"></a>
+                                <a href="#" class="contact pull-right fa fa-twitter"></a>
+                            </div>
+                        </div>
+                        <h3>Nick Doe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="speaker">
+                        <div class="speaker-info">
+                            <div class="speaker-photo">
+                                <img src="images/demo/speakers/speaker-05.jpg" alt="Speaker 5">
+                            </div>
+                            <div class="speaker-contacts">
+                                <a href="#" class="contact pull-left fa fa-facebook"></a>
+                                <a href="#" class="contact pull-right fa fa-twitter"></a>
+                            </div>
+                        </div>
+                        <h3>Valerie Doe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  sed do eiusmod tempor</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="speaker">
+                        <div class="speaker-info">
+                            <div class="speaker-photo">
+                                <img src="images/demo/speakers/speaker-06.jpg" alt="Speaker 6">
+                            </div>
+                            <div class="speaker-contacts">
+                                <a href="#" class="contact pull-left fa fa-facebook"></a>
+                                <a href="#" class="contact pull-right fa fa-twitter"></a>
+                            </div>
+                        </div>
+                        <h3>Mike Doe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </section>
+            <!--==========-->
+            <!--===============================-->
+            <!--== FAQ ========================-->
+            <!--===============================-->
+            <section id="faq" class="row">
+                <div class="col-sm-12">
+                    <div class="section-header text-right">
+                        <h2>F.A.Q</h2>
+                        <h4>Awesome section description goes here.</h4>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="accordion-group">
+                        <li class="accordion">
+                            <a class="accordion-heading">
+                                <h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
+                                <span class="fa fa-plus-circle pull-right"></span>
+                            </a>
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+                            </div>
+                        </li>
+                        <li class="accordion">
+                            <a class="accordion-heading">
+                                <h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
+                                <span class="fa fa-plus-circle pull-right"></span>
+                            </a>
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="accordion-group">
+                        <li class="accordion">
+                            <a class="accordion-heading">
+                                <h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
+                                <span class="fa fa-plus-circle pull-right"></span>
+                            </a>
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+                            </div>
+                        </li>
+                        <li class="accordion">
+                            <a class="accordion-heading">
+                                <h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
+                                <span class="fa fa-plus-circle pull-right"></span>
+                            </a>
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--==========-->
+            <!--===============================-->
+            <!--== Carousel ===================-->
+            <!--===============================-->
+            <section id="partners" class="row">
+                <div class="col-sm-12">
+                    <div class="section-header text-center">
+                        <h2>Partners</h2>
+                        <h4>Awesome section description goes here.</h4>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div id="carousel" class="owl-carousel">
+                        <div class="item"><img src="images/demo/partners/logo-01.png" alt="Logo 1"></div>
+                        <div class="item"><img src="images/demo/partners/logo-02.png" alt="Logo 2"></div>
+                        <div class="item"><img src="images/demo/partners/logo-03.png" alt="Logo 3"></div>
+                        <div class="item"><img src="images/demo/partners/logo-04.png" alt="Logo 4"></div>
+                        <div class="item"><img src="images/demo/partners/logo-05.png" alt="Logo 5"></div>
+                        <div class="item"><img src="images/demo/partners/logo-06.png" alt="Logo 6"></div>
+                    </div>
+                    <div class="owl-carousel-navigation">
+                        <a class="owl-btn prev fa fa-angle-left"></a>
+                        <a class="owl-btn next fa fa-angle-right"></a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==========-->
+            <!--===============================-->
+            <!--== Pricing Tables =============-->
+            <!--===============================-->
+            <section id="subscribe" class="row">
+                <div class="col-sm-12">
+                    <div class="section-header text-left">
+                        <h2>Valores de Inscrição</h2>
+                        <h4>Iremos fazer um evento épico! Inscreva-se enquanto há vagas.</h4>
+                    </div>
+                </div>
+                <ul class="col-sm-3 pricing-features">
+                    <li>Desconto de 50%</li>
+                    <li>Desconto de 25%</li>
+                    <li>Valor sem desconto</li>
+                </ul>
+                <div class="col-md-3 col-sm-4">
+                    <div class="pricing-table">
+                        <h3 class="table-title">Até 15/03</h3>
+                        <div class="table-price">R$ 100,00</div>
+                        <ul class="table-features">
+                            <li class="fa fa-check-circle"><span>50% de desconto</span></li>
+                            <li class="fa fa-minus-circle"><span>25% de desconto</span></li>
+                            <li class="fa fa-minus-circle"><span>Sem desconto</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="pricing-table">
+                        <h3 class="table-title">Até 15/04</h3>
+                        <div class="table-price">R$ 150,00</div>
+                        <ul class="table-features">
+                            <li class="fa fa-minus-circle"><span>50% de desconto</span></li>
+                            <li class="fa fa-check-circle"><span>25% de desconto</span></li>
+                            <li class="fa fa-minus-circle"><span>Sem desconto</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="pricing-table">
+                        <h3 class="table-title">Até 15/05</h3>
+                        <div class="table-price">R$ 200,00</div>
+                        <ul class="table-features">
+                            <li class="fa fa-minus-circle"><span>50% de desconto</span></li>
+                            <li class="fa fa-minus-circle"><span>25% de desconto</span></li>
+                            <li class="fa fa-check-circle"><span>Sem desconto</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-sm-offset-3 text-center">
+                    <a class="btn btn-primary btn-lg btn-block" href="https://www.sympla.com.br/aspnet-brasil-conference---2015__28909" target="_blank">Inscreva-se</a>
+
+                </div>
+            </section>
+
+            <section id="communication" class="row">
+                <div class="col-sm-12">
+                    <div class="section-header text-left">
+                        <h2>Comunicação do Evento</h2>
+                        <h4>Para saber novidades sobre o evento, cadastre-se aqui.</h4>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <form id="subscribe-form" method="post" class="form">
+                        <div class="col-sm-5 col-xs-12">
+                            <input name="name" id="name" type="text" placeholder="Nome" required>
+                        </div>
+                        <div class="col-sm-5 col-xs-12">
+                            <input name="email" id="email" type="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="col-sm-2 col-xs-12">
+                            <input type="submit" value="Enviar" name="submit">
+                        </div>
+                        <p class="form-notification" style="display: none;">Done!</p>
+                    </form>
+                </div>
+            </section>
+
+            <div id="gotop" class="gotop fa fa-arrow-up"></div>
+        </div>
     </div>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="Scripts/ie10-viewport-bug-workaround.js"></script>
-    <script src="Scripts/jquery-2.1.3.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/angular.min.js"></script>
-    <script src="Scripts/angular-route.min.js"></script>
-    <script src="Scripts/angular-loader.min.js"></script>
-    <script src="Scripts/angular-animate.min.js"></script>
-    <script src="Scripts/angular-sanitize.min.js"></script>
-    <script src="Scripts/angular-touch.min.js"></script>
-    <script src="Scripts/i18n/angular-locale_pt-br.js"></script>
+    <footer id="footer">
+        <div id="map_canvas"></div>
 
-    <!-- Site App -->
-    <script src="app/app.js"></script>
-    <script src="app/config.js"></script>
-    <script src="app/pages/static/pageController.js"></script>
+        <div class="footer">
+            <div class="container box">
+
+                <section id="info" class="row">
+                    <div class="col-sm-8">
+
+                        <!--== Social Icons ==-->
+                        <ul class="social-icons">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fa fa-youtube"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                            <li><a href="#" class="fa fa-pinterest"></a></li>
+                            <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-sm-4 text-right">
+                        <div class="copyrights">
+                            All Rights Reserved. © 2014
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </footer>
+
+    <!--== Javascript Files ==-->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.accordion.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/gmap3.js"></script>
+    <script src="js/fancySelect.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
