@@ -1,9 +1,11 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="app">
 <head>
-    <title>ASP.NET Brasil Conference 2015</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>ASP.NET Brasil Conference 2015</title>
+
 
     <!--== CSS Files ==-->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
@@ -48,7 +50,6 @@
                                 <li><a href="#schedule">Programação</a></li>
                                 <li><a href="#subscribe">Inscrições</a></li>
                                 <li><a href="#speakers">Palestrantes</a></li>
-                                <li><a href="#partners">Patrocinadores</a></li>
                                 <li><a href="#local">Localização</a></li>
                                 <li><a href="#contact">Contato</a></li>
                             </ul>
@@ -91,462 +92,9 @@
     </header>
 
     <div class="content">
-        <div class="container box">
-
-
-            <!--===============================-->
-            <!--== Features ===================-->
-            <!--===============================-->
-            <section id="features" class="row">
-                <div class="col-md-3 col-xs-6">
-                    <div class="event-info">
-                        <div class="icon fa fa-map-marker"></div>
-                        <div class="info">
-                            <h3>São Paulo</h3>
-                            <span>Teatro Copi, FIAP.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-6">
-                    <div class="event-info">
-                        <div class="icon fa fa-calendar"></div>
-                        <div class="info">
-                            <h3>16 de Maio</h3>
-                            <span>8h as 17h.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-6">
-                    <div class="event-info">
-                        <div class="icon fa fa-microphone"></div>
-                        <div class="info">
-                            <h3>6 Palestrantes</h3>
-                            <span>ASP.NET MVP.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-6">
-                    <div class="event-info">
-                        <div class="icon fa fa-users"></div>
-                        <div class="info">
-                            <h3>400 Lugares</h3>
-                            <span>Corra, inscreva-se!</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--==========-->
-            <!--===============================-->
-            <!--== Schedule ===================-->
-            <!--===============================-->
-            <section id="schedule" class="row">
-
-                <div class="col-md-5 col-sm-12">
-                    <h2>ASP.NET Brasil Conference</h2>
-                    <p>
-                        Nós acreditamos que a dinâmica do conhecimento é essencial para o crescimento profissional,
-                        por isso criamos o ASP.NET Brasil Conference. Onde palestrantes influentes garantem um evento com alto nível técnico que desde a primeira edição tem influenciado pessoas e marcado história na comunidade de desenvolvimento Microsoft.
-                    </p>
-                    <p>
-                        Nossa programação está sendo definida, mas os palestrantes já estão confirmados.
-                    </p>
-
-                </div>
-                <div class="col-md-7 col-sm-12">
-                    <div class="content-tabs">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#tab1" data-toggle="tab">Manhã</a></li>
-                            <li><a href="#tab2" data-toggle="tab">Tarde</a></li>
-                        </ul>
-
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="tab1">
-                                <ul class="accordion-group">
-                                    <li class="accordion">
-                                        <a class="accordion-heading">
-                                            <time>08:00</time>
-                                            <h4 class="accordion-title">Welcome Coffee</h4>
-                                            <!--<span class="fa fa-plus-circle pull-right"></span>-->
-                                        </a>
-                                        <!--<div class="accordion-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-                                        </div>-->
-                                    </li>
-                                    <li class="accordion">
-                                        <a class="accordion-heading">
-                                            <time>09:00</time>
-                                            <h4 class="accordion-title">Keynote</h4>
-                                            <!--<span class="fa fa-plus-circle pull-right"></span>-->
-                                        </a>
-                                        <!--<div class="accordion-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-                                        </div>-->
-                                    </li>
-                                    <li class="accordion">
-                                        <a class="accordion-heading">
-                                            <time>09:30</time>
-                                            <h4 class="accordion-title">Alexandre Tarifa (MVP) / Rodolfo Fadino (MVP)</h4>
-                                        </a>
-                                    </li>
-                                    <li class="accordion">
-                                        <a class="accordion-heading">
-                                            <time>10:10</time>
-                                            <h4 class="accordion-title">André Baltieri (MVP)</h4>
-                                        </a>
-                                    </li>
-                                    <li class="accordion">
-                                        <a class="accordion-heading">
-                                            <time>10:50</time>
-                                            <h4 class="accordion-title">Eduardo Pires (MVP)</h4>
-                                        </a>
-                                    </li>
-                                    <li class="accordion">
-                                        <a class="accordion-heading">
-                                            <time>12:10</time>
-                                            <h4 class="accordion-title">Almoço</h4>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane" id="tab2">
-                                <ul class="accordion-group">
-
-
-                                    <li class="accordion">
-                                        <a class="accordion-heading">
-                                            <time>13:30</time>
-                                            <h4 class="accordion-title">Rodrigo Kono (MVP)</h4>
-                                        </a>
-                                    </li>
-                                    <li class="accordion">
-                                        <a class="accordion-heading">
-                                            <time>14:10</time>
-                                            <h4 class="accordion-title">Victor Cavalcante (MVP)</h4>
-                                        </a>
-                                    </li>
-                                    <li class="accordion">
-                                        <a class="accordion-heading">
-                                            <time>14:50</time>
-                                            <h4 class="accordion-title">Waldyr Felix (MVP)</h4>
-                                        </a>
-                                    </li>
-                                    <li class="accordion">
-                                        <a class="accordion-heading">
-                                            <time>15:30</time>
-                                            <h4 class="accordion-title">Giovanni Bassi (MVP)</h4>
-                                        </a>
-                                    </li>
-                                    <li class="accordion">
-                                        <a class="accordion-heading">
-                                            <time>16:10</time>
-                                            <h4 class="accordion-title">Encerramento - Sorteio de Prêmios</h4>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-
-
-
-            <!--==========-->
-            <!--===============================-->
-            <!--== Speakers ===================-->
-            <!--===============================-->
-            <section id="speakers" class="row separated">
-                <div class="col-sm-12">
-                    <div class="section-header text-center">
-                        <h2>Palestrantes</h2>
-                        <h4>Todos Microsoft MVP.</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="speaker">
-                        <div class="speaker-info">
-                            <div class="speaker-photo">
-                                <img width="220" height="220" src="img/Alexandre-Tarifa.jpg" alt="Alexandre-Tarifa" />
-                            </div>
-                            <div class="speaker-contacts">
-                                <a href="https://www.facebook.com/alexandrectarifa" class="contact pull-left fa fa-facebook"></a>
-                                <a href="https://twitter.com/alexandretarifa" class="contact pull-right fa fa-twitter"></a>
-                            </div>
-                        </div>
-                        <h3>Alexandre Tarifa</h3>
-                        <p>Diretor de Tecnologia na empresa Minha Vida.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="speaker">
-                        <div class="speaker-info">
-                            <div class="speaker-photo">
-                                <img width="220" height="220" src="img/Andre-Baltieri.jpg" alt="André Baltieri" />
-                            </div>
-                            <div class="speaker-contacts">
-                                <a href="https://www.facebook.com/andre.baltieri" class="contact pull-left fa fa-facebook"></a>
-                                <a href="https://twitter.com/andrebaltieri" class="contact pull-right fa fa-twitter"></a>
-                            </div>
-                        </div>
-                        <h3>André Baltieri</h3>
-                        <p>Engenheiro de Software na empresa BR Soluções Integradas.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="speaker">
-                        <div class="speaker-info">
-                            <div class="speaker-photo">
-                                <img width="220" height="220" src="img/Eduardo-Pires.jpg" alt="Eduardo Pires" />
-                            </div>
-                            <div class="speaker-contacts">
-                                <a href="https://www.facebook.com/headfox" class="contact pull-left fa fa-facebook"></a>
-                                <a href="https://twitter.com/eduardopiresbr" class="contact pull-right fa fa-twitter"></a>
-                            </div>
-                        </div>
-                        <h3>Eduardo Pires</h3>
-                        <p>Arquiteto de Sistemas e Consultor Independente.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="speaker">
-                        <div class="speaker-info">
-                            <div class="speaker-photo">
-                                <img width="220" height="220" src="img/Giovanni-Bassi.jpg" alt="Giovanni Bassi" />
-                            </div>
-                            <div class="speaker-contacts">
-                                <a href="https://www.facebook.com/giggio.bassi" class="contact pull-left fa fa-facebook"></a>
-                                <a href="https://twitter.com/giovannibassi" class="contact pull-right fa fa-twitter"></a>
-                            </div>
-                        </div>
-                        <h3>Giovanni Bassi</h3>
-                        <p>Sócio Proprietário na Lambda3 e Microsoft MVP.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="speaker">
-                        <div class="speaker-info">
-                            <div class="speaker-photo">
-                                <img width="220" height="220" src="img/Rodolfo-Fadino.jpg" alt="Rodolfo Fadino" />
-                            </div>
-                            <div class="speaker-contacts">
-                                <a href="https://www.facebook.com/rodolfo.fadinojunior" class="contact pull-left fa fa-facebook"></a>
-                                <a href="https://twitter.com/RodolfoFadino" class="contact pull-right fa fa-twitter"></a>
-                            </div>
-                        </div>
-                        <h3>Rodolfo Fadino</h3>
-                        <p>Arquiteto de Soluções e Microsoft MVP.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="speaker">
-                        <div class="speaker-info">
-                            <div class="speaker-photo">
-                                <img width="220" height="220" src="img/Rodrigo-Kono.jpg" alt="Rodrigo Kono" />
-                            </div>
-                            <div class="speaker-contacts">
-                                <a href="https://www.facebook.com/rodrigokono" class="contact pull-left fa fa-facebook"></a>
-                                <a href="https://twitter.com/rodrigokono" class="contact pull-right fa fa-twitter"></a>
-                            </div>
-                        </div>
-                        <h3>Rodrigo Kono</h3>
-                        <p>Desenvolvedor Especialista em Web e Microsoft MVP.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="speaker">
-                        <div class="speaker-info">
-                            <div class="speaker-photo">
-                                <img width="220" height="220" src="img/Victor-Cavalcante.jpg" alt="Victor Cavalcante" />
-                            </div>
-                            <div class="speaker-contacts">
-                                <a href="https://www.facebook.com/vccavalcante" class="contact pull-left fa fa-facebook"></a>
-                                <a href="https://twitter.com/vcavalcante" class="contact pull-right fa fa-twitter"></a>
-                            </div>
-                        </div>
-                        <h3>Victor Cavalcante</h3>
-                        <p>Sócio Proprietário na empresa Lambda3.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="speaker">
-                        <div class="speaker-info">
-                            <div class="speaker-photo">
-                                <img width="220" height="220" src="img/Waldyr-Felix.jpg" alt="Waldyr Felix" />
-                            </div>
-                            <div class="speaker-contacts">
-                                <a href="https://www.facebook.com/waldyrfelix" class="contact pull-left fa fa-facebook"></a>
-                                <a href="https://twitter.com/waldyrfelix" class="contact pull-right fa fa-twitter"></a>
-                            </div>
-                        </div>
-                        <h3>Waldyr Felix</h3>
-                        <p>Consultor Líder na FCamara e Microsoft MVP.</p>
-                    </div>
-                </div>
-            </section>
-            <!--==========-->
-            <!--===============================-->
-            <!--== FAQ ========================-->
-            <!--===============================-->
-            <section id="faq" class="row">
-                <div class="col-sm-12">
-                    <div class="section-header text-right">
-                        <h2>F.A.Q</h2>
-                        <h4>Awesome section description goes here.</h4>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <ul class="accordion-group">
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-                            </div>
-                        </li>
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-6">
-                    <ul class="accordion-group">
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-                            </div>
-                        </li>
-                        <li class="accordion">
-                            <a class="accordion-heading">
-                                <h4 class="accordion-title">Lorem ipsum dolor sit amet ?</h4>
-                                <span class="fa fa-plus-circle pull-right"></span>
-                            </a>
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ratione nostrum atque nobis debitis doloremque. Fugit, officia laudantium repellat assumenda eligendi vel sed dolore delectus. Vitae sequi cum doloribus veniam.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!--==========-->
-            <!--===============================-->
-            <!--== Carousel ===================-->
-            <!--===============================-->
-            <section id="partners" class="row">
-                <div class="col-sm-12">
-                    <div class="section-header text-center">
-                        <h2>Partners</h2>
-                        <h4>Awesome section description goes here.</h4>
-                    </div>
-                </div>
-                <div class="col-sm-12">
-                    <div id="carousel" class="owl-carousel">
-                        <div class="item"><img src="images/demo/partners/logo-01.png" alt="Logo 1"></div>
-                        <div class="item"><img src="images/demo/partners/logo-02.png" alt="Logo 2"></div>
-                        <div class="item"><img src="images/demo/partners/logo-03.png" alt="Logo 3"></div>
-                        <div class="item"><img src="images/demo/partners/logo-04.png" alt="Logo 4"></div>
-                        <div class="item"><img src="images/demo/partners/logo-05.png" alt="Logo 5"></div>
-                        <div class="item"><img src="images/demo/partners/logo-06.png" alt="Logo 6"></div>
-                    </div>
-                    <div class="owl-carousel-navigation">
-                        <a class="owl-btn prev fa fa-angle-left"></a>
-                        <a class="owl-btn next fa fa-angle-right"></a>
-                    </div>
-                </div>
-            </section>
-
-            <!--==========-->
-            <!--===============================-->
-            <!--== Pricing Tables =============-->
-            <!--===============================-->
-            <section id="subscribe" class="row">
-                <div class="col-sm-12">
-                    <div class="section-header text-left">
-                        <h2>Valores de Inscrição</h2>
-                        <h4>Iremos fazer um evento épico! Inscreva-se enquanto há vagas.</h4>
-                    </div>
-                </div>
-                <ul class="col-sm-3 pricing-features">
-                    <li>Desconto de 50%</li>
-                    <li>Desconto de 25%</li>
-                    <li>Valor sem desconto</li>
-                </ul>
-                <div class="col-md-3 col-sm-4">
-                    <div class="pricing-table">
-                        <h3 class="table-title">Até 15/03</h3>
-                        <div class="table-price">R$ 100,00</div>
-                        <ul class="table-features">
-                            <li class="fa fa-check-circle"><span>50% de desconto</span></li>
-                            <li class="fa fa-minus-circle"><span>25% de desconto</span></li>
-                            <li class="fa fa-minus-circle"><span>Sem desconto</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4">
-                    <div class="pricing-table">
-                        <h3 class="table-title">Até 15/04</h3>
-                        <div class="table-price">R$ 150,00</div>
-                        <ul class="table-features">
-                            <li class="fa fa-minus-circle"><span>50% de desconto</span></li>
-                            <li class="fa fa-check-circle"><span>25% de desconto</span></li>
-                            <li class="fa fa-minus-circle"><span>Sem desconto</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-4">
-                    <div class="pricing-table">
-                        <h3 class="table-title">Até 15/05</h3>
-                        <div class="table-price">R$ 200,00</div>
-                        <ul class="table-features">
-                            <li class="fa fa-minus-circle"><span>50% de desconto</span></li>
-                            <li class="fa fa-minus-circle"><span>25% de desconto</span></li>
-                            <li class="fa fa-check-circle"><span>Sem desconto</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-sm-offset-3 text-center">
-                    <a class="btn btn-primary btn-lg btn-block" href="https://www.sympla.com.br/aspnet-brasil-conference---2015__28909" target="_blank">Inscreva-se</a>
-
-                </div>
-            </section>
-
-            <section id="communication" class="row">
-                <div class="col-sm-12">
-                    <div class="section-header text-left">
-                        <h2>Comunicação do Evento</h2>
-                        <h4>Para saber novidades sobre o evento, cadastre-se aqui.</h4>
-                    </div>
-                </div>
-                <div class="col-sm-12">
-                    <form id="subscribe-form" method="post" class="form">
-                        <div class="col-sm-5 col-xs-12">
-                            <input name="name" id="name" type="text" placeholder="Nome" required>
-                        </div>
-                        <div class="col-sm-5 col-xs-12">
-                            <input name="email" id="email" type="email" placeholder="E-mail" required>
-                        </div>
-                        <div class="col-sm-2 col-xs-12">
-                            <input type="submit" value="Enviar" name="submit">
-                        </div>
-                        <p class="form-notification" style="display: none;">Done!</p>
-                    </form>
-                </div>
-            </section>
-        </div>
+        <div class="container box" ng-view></div>
     </div>
+
     <footer id="footer">
         <div id="map_canvas"></div>
 
@@ -555,22 +103,10 @@
 
                 <section id="info" class="row">
                     <div class="col-sm-8">
-
-                        <!--== Social Icons ==-->
-                        <ul class="social-icons">
-                            <li><a href="#" class="fa fa-facebook"></a></li>
-                            <li><a href="#" class="fa fa-twitter"></a></li>
-                            <li><a href="#" class="fa fa-google-plus"></a></li>
-                            <li><a href="#" class="fa fa-youtube"></a></li>
-                            <li><a href="#" class="fa fa-instagram"></a></li>
-                            <li><a href="#" class="fa fa-pinterest"></a></li>
-                            <li><a href="#" class="fa fa-linkedin"></a></li>
-                        </ul>
-
                     </div>
                     <div class="col-sm-4 text-right">
                         <div class="copyrights">
-                            All Rights Reserved. © 2014
+                            &copy; ASP.NET Brasil Conference 2015
                         </div>
                     </div>
                 </section>
@@ -589,10 +125,16 @@
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/jquery.accordion.js"></script>
     <script src="js/jquery.placeholder.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
     <script src="js/gmap3.js"></script>
     <script src="js/fancySelect.js"></script>
     <script src="js/main.js"></script>
 
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/config.js"></script>
+    <script src="app/pages/static/pageController.js"></script>
+    <script src="app/communication/communicationService.js"></script>
+    <script src="app/communication/communicationController.js"></script>
 </body>
 </html>

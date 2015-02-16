@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="js\jquery-2.1.3.intellisense.js" />
+    <Content Include="app\communication\communicationController.js" />
+    <Content Include="app\communication\communicationService.js" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\fancySelect.css" />
     <Content Include="css\flexslider.css" />

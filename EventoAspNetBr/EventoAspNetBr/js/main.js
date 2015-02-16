@@ -2,7 +2,7 @@
     "use strict";
 
     ///////////////////////////////////////////////////// Your
-    var venueAddress = "Grand Place, 1000, Brussels"; // Venue
+    var venueAddress = "Avenida Lins de Vasconcelos 1264, Sao paulo"; // Venue
     /////////////////////////////////////////////////// Adress
 
     var fn = {
