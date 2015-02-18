@@ -207,8 +207,8 @@ input[type='submit']:active {
 }
 
 .header-menu > .box {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .header-menu.sticky > .box {
@@ -355,9 +355,16 @@ Navigation =========*/
 	-o-transition: all 0.1s; 
 }
 
+.navbar-header {
+    float: none;
+    height: 80px;
+}
+
 .navbar-nav {
 	float: right;
 	margin: 1rem 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .navbar-nav > li {
@@ -405,7 +412,7 @@ Navigation =========*/
 }
 
 .navbar-brand.logo > img {
-    max-height: 40px;
+    max-height: 65px;
     width: auto;
 }
 

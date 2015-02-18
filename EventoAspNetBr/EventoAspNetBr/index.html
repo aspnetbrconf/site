@@ -22,41 +22,46 @@
     <link href="http://fonts.googleapis.com/css?family=Belgrano" rel="stylesheet" type="text/css">
 
 </head>
-<body>
+<body ng-controller="pageController as page" ng-init="page.init()">
     <header id="header">
         <div id="menu" class="header-menu fixed">
             <div class="container box">
-                <div class="row">
-                    <nav role="navigation" class="col-sm-12">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
 
-                            <!--== Logo ==-->
-                            <span class="navbar-brand logo">
-                                <img src="img/logo-aspnetbr.png" title="ASP.NET Brasil Conference" alt="ASP.NET Brasil Conference" />
-                            </span>
+                <nav role="navigation">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
 
+                                <!--== Logo ==-->
+                                <span class="navbar-brand logo">
+                                    <img src="img/logo-aspnetbr.png" title="ASP.NET Brasil Conference" alt="ASP.NET Brasil Conference" />
+                                </span>
+
+                            </div>
                         </div>
-                        <div class="navbar-collapse collapse">
+                        <div class="col-lg-8">
+                            <div class="navbar-collapse collapse">
 
-                            <!--== Navigation Menu ==-->
-                            <ul class="nav navbar-nav">
-                                <li class="current"><a href="#header">Home</a></li>
-                                <li><a href="#schedule">Programação</a></li>
-                                <li><a href="#subscribe">Inscrições</a></li>
-                                <li><a href="#speakers">Palestrantes</a></li>
-                                <li><a href="#local">Localização</a></li>
-                                <li><a href="#contact">Contato</a></li>
-                            </ul>
+                                <!--== Navigation Menu ==-->
+                                <ul class="nav navbar-nav">
+                                    <li class="current"><a href="#header">Home</a></li>
+                                    <li><a href="#schedule">Programação</a></li>
+                                    <li><a href="#speakers">Palestrantes</a></li>
+                                    <li><a href="#subscribe">Inscrições</a></li>
+                                    <li><a href="#local">Localização</a></li>
+                                    <!--<li><a href="#contact">Contato</a></li>-->
+                                </ul>
 
+                            </div>
                         </div>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
             </div>
         </div>
 
@@ -96,11 +101,8 @@
     </div>
 
     <footer id="footer">
-        <div id="map_canvas"></div>
-
         <div class="footer">
             <div class="container box">
-
                 <section id="info" class="row">
                     <div class="col-sm-8">
                     </div>
@@ -127,7 +129,6 @@
     <script src="js/jquery.placeholder.js"></script>
     <script src="js/gmap3.js"></script>
     <script src="js/fancySelect.js"></script>
-    <script src="js/main.js"></script>
 
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.min.js"></script>
@@ -135,6 +136,8 @@
     <script src="app/config.js"></script>
     <script src="app/pages/static/pageController.js"></script>
     <script src="app/communication/communicationService.js"></script>
+    <script src="app/contact/contactService.js"></script>
     <script src="app/communication/communicationController.js"></script>
+    <script src="app/contact/contactController.js"></script>
 </body>
 </html>
