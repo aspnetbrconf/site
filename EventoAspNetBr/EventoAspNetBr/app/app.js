@@ -2,7 +2,8 @@
     'use strict';
 
     var app = angular.module('app', [
-        'ngRoute'
+        'ngRoute',
+        'ui.bootstrap'
     ]);
 
     app.run(['$rootScope', '$route', '$location',

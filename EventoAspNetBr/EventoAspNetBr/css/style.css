@@ -144,7 +144,7 @@ select {
     -webkit-appearance: menulist-button;
 }
 
-input[type='submit'] {
+input[type='submit'], button {
 	height: 6rem;
 	font-size: 2.5rem;
 	color: #ffffff;
@@ -155,11 +155,11 @@ input[type='submit'] {
 	-o-transition: all 0.1s; 
 }
 
-input[type='submit']:hover {
+button:hover, input[type='submit']:hover {
 	opacity: 0.9;
 }
 
-input[type='submit']:active {
+input[type='submit']:active, button:active  {
 	border-bottom: 1px solid #b85146;
 }
 
