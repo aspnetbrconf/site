@@ -952,12 +952,12 @@
     <Content Include="js\version.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="api\ContactController.cs" />
-    <Compile Include="model\Communication.cs" />
-    <Compile Include="api\CommunicationController.cs" />
-    <Compile Include="model\AspNetBrContext.cs" />
+    <Compile Include="Api\Controllers\ContactController.cs" />
+    <Compile Include="Api\Model\Communication.cs" />
+    <Compile Include="Api\Controllers\CommunicationController.cs" />
+    <Compile Include="Api\Model\AspNetBrContext.cs" />
+    <Compile Include="Api\ViewModel\ContactViewModel.cs" />
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="model\Contact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

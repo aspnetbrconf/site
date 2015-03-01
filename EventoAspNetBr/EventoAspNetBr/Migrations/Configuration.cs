@@ -1,4 +1,4 @@
-using EventoAspNetBr.model;
+using EventoAspNetBr.Api.Model;
 
 namespace EventoAspNetBr.Migrations
 {

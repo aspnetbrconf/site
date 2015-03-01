@@ -3,26 +3,17 @@ using System.Configuration;
 using System.Net.Mail;
 using System.Threading.Tasks;
 using System.Web.Http;
-using EventoAspNetBr.model;
+using EventoAspNetBr.Api.ViewModel;
 
-namespace EventoAspNetBr.api
+namespace EventoAspNetBr.Api.Controllers
 {
     public class ContactController : ApiController
     {
-        private readonly AspNetBrContext _context;
 
-        public ContactController()
-        {
-            _context = new AspNetBrContext();
-        }
-
-        public async Task<dynamic> Post(Contact contact)
+        public async Task<dynamic> Post(ContactViewModel contact)
         {
             try
             {
-                _context.Contacts.Add(contact);
-                _context.SaveChanges();
-
                 await sendEmail(contact);
 
                 return new { success = true, data = contact };
@@ -33,7 +24,7 @@ namespace EventoAspNetBr.api
             }
         }
 
-        private Task sendEmail(Contact contact)
+        private Task sendEmail(ContactViewModel contact)
         {
             var mailMessage = new MailMessage
             {
@@ -48,10 +39,5 @@ namespace EventoAspNetBr.api
             return smtp.SendMailAsync(mailMessage);
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            _context.Dispose();
-            base.Dispose(disposing);
-        }
     }
 }

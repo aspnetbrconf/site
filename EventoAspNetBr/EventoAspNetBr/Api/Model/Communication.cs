@@ -1,4 +1,4 @@
-﻿namespace EventoAspNetBr.model
+﻿namespace EventoAspNetBr.Api.Model
 {
     public class Communication
     {

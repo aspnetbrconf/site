@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Web.Http;
-using EventoAspNetBr.model;
+using EventoAspNetBr.Api.Model;
 
-namespace EventoAspNetBr.api
+namespace EventoAspNetBr.Api.Controllers
 {
     public class CommunicationController : ApiController
     {

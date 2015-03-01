@@ -320,7 +320,6 @@
     </div>
     <div class="col-sm-3 col-sm-offset-3 text-center">
         <a class="btn btn-primary btn-lg btn-block" href="https://www.sympla.com.br/aspnet-brasil-conference---2015__28909" target="_blank">Inscreva-se</a>
-
     </div>
 </section>
 
@@ -363,7 +362,7 @@
 </section>
 
 <!--== Form de Contato =============-->
-<!--<section id="contact" class="row" ng-controller="contactController as cont">
+<section id="contact" class="row" ng-controller="contactController as cont">
     <div class="col-sm-12">
         <div class="section-header text-left">
             <h2>Contato</h2>
@@ -383,9 +382,11 @@
                 <input name="message" ng-model="cont.model.message" type="text" placeholder="Mensagem" required>
             </div>
             <div class="col-sm-2 col-xs-12">
-                <input type="submit" value="Enviar" name="submit">
+                <button ng-disabled="cont.isBusy" type="submit" class="btn btn-primary btn-lg">
+                    {{cont.isBusy ? 'Enviando...' : 'Enviar'}}
+                </button>
             </div>
             <p class="form-notification" ng-show="cont.success">Mensagem enviada!</p>
         </form>
     </div>
-</section>-->
+</section>
