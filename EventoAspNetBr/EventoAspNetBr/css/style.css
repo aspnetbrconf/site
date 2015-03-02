@@ -16,7 +16,7 @@ div.fancy-select ul.options li.selected, div.fancy-select ul.options li.selected
     border-color: #2e6da4;
 }
 
-a, .accordion-heading span, .speaker-contacts > .contact, 
+a, .accordion-toggle span, .speaker-contacts > .contact, 
 .table-features li.fa-check-circle, .owl-btn.prev,
 .owl-btn.next, div.fancy-select ul.options li.hover {
 	color: #00aeda; /* <- Paste here your prefered color */
@@ -535,7 +535,7 @@ Accordion ==========*/
 	border-top: 3px solid #ffffff;
 }
 
-.accordion-heading {
+.accordion-toggle {
 	display: block;
 	position: relative;
 	min-height: 4rem;
@@ -554,7 +554,7 @@ Accordion ==========*/
 	padding: 0.5rem 4rem 0 0;
 }
 
-.accordion-heading span {
+.accordion-toggle span {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -567,7 +567,7 @@ Accordion ==========*/
   content: "\f056";
 }
 
-.accordion-heading time {
+.accordion-toggle time {
 	float: left;
 	margin-right: 2rem;
 	padding: 0 1.5rem;

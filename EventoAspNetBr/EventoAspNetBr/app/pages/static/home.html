@@ -57,7 +57,7 @@
             <tab heading="Manhã">
                 <ul class="accordion-group">
                     <li class="accordion">
-                        <a class="accordion-heading">
+                        <a class="accordion-toggle">
                             <time>08:00</time>
                             <h4 class="accordion-title">Welcome Coffee</h4>
                             <!--<span class="fa fa-plus-circle pull-right"></span>-->
@@ -67,7 +67,7 @@
                         </div>-->
                     </li>
                     <li class="accordion">
-                        <a class="accordion-heading">
+                        <a class="accordion-toggle">
                             <time>09:00</time>
                             <h4 class="accordion-title">Keynote</h4>
                             <!--<span class="fa fa-plus-circle pull-right"></span>-->
@@ -77,25 +77,25 @@
                         </div>-->
                     </li>
                     <li class="accordion">
-                        <a class="accordion-heading">
+                        <a class="accordion-toggle">
                             <time>09:30</time>
                             <h4 class="accordion-title">Alexandre Tarifa (MVP) / Rodolfo Fadino (MVP)</h4>
                         </a>
                     </li>
                     <li class="accordion">
-                        <a class="accordion-heading">
+                        <a class="accordion-toggle">
                             <time>10:10</time>
                             <h4 class="accordion-title">André Baltieri (MVP)</h4>
                         </a>
                     </li>
                     <li class="accordion">
-                        <a class="accordion-heading">
+                        <a class="accordion-toggle">
                             <time>10:50</time>
                             <h4 class="accordion-title">Eduardo Pires (MVP)</h4>
                         </a>
                     </li>
                     <li class="accordion">
-                        <a class="accordion-heading">
+                        <a class="accordion-toggle">
                             <time>12:10</time>
                             <h4 class="accordion-title">Almoço</h4>
                         </a>
@@ -107,31 +107,31 @@
 
 
                     <li class="accordion">
-                        <a class="accordion-heading">
+                        <a class="accordion-toggle">
                             <time>13:30</time>
                             <h4 class="accordion-title">Rodrigo Kono (MVP)</h4>
                         </a>
                     </li>
                     <li class="accordion">
-                        <a class="accordion-heading">
+                        <a class="accordion-toggle">
                             <time>14:10</time>
                             <h4 class="accordion-title">Victor Cavalcante (MVP)</h4>
                         </a>
                     </li>
                     <li class="accordion">
-                        <a class="accordion-heading">
+                        <a class="accordion-toggle">
                             <time>14:50</time>
                             <h4 class="accordion-title">Waldyr Felix (MVP)</h4>
                         </a>
                     </li>
                     <li class="accordion">
-                        <a class="accordion-heading">
+                        <a class="accordion-toggle">
                             <time>15:30</time>
                             <h4 class="accordion-title">Giovanni Bassi (MVP)</h4>
                         </a>
                     </li>
                     <li class="accordion">
-                        <a class="accordion-heading">
+                        <a class="accordion-toggle">
                             <time>16:10</time>
                             <h4 class="accordion-title">Encerramento - Sorteio de Prêmios</h4>
                         </a>
@@ -388,5 +388,104 @@
             </div>
             <p class="form-notification" ng-show="cont.success">Mensagem enviada!</p>
         </form>
+    </div>
+</section>
+
+
+
+<!--== FAQ =============-->
+<section id="faq" class="row">
+    <div class="col-sm-12">
+        <div class="section-header text-left">
+            <h2>Perguntas Frequentes (FAQ)</h2>
+            <h4>Tire suas dúvidas sobre o evento.</h4>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <accordion close-others="oneAtATime">
+            <accordion-group>
+                <accordion-heading>
+                    <h4 class="accordion-title">
+                        Quando será realizado o evento?
+                    </h4>
+                    <span class="fa fa-plus-circle pull-right"></span>
+                </accordion-heading>
+                <p>O ASP.NET Brasil Conference 2015 será realizado no dia 16 de maio deste mesmo ano.</p> 
+            </accordion-group>
+            <accordion-group>
+                <accordion-heading>
+                    <h4 class="accordion-title">Qual o horário do evento?</h4>
+                    <span class="fa fa-plus-circle pull-right"></span>
+                </accordion-heading>
+                <p>O auditório do ASP.NET Brasil Conference 2015 será aberto pontualmente as 8h da manhã para credenciamento e café da manhã. As palestras irão iniciar as 9h da manhã e irão até as 17h, com intervalo para almoço.</p>
+            </accordion-group>
+            <accordion-group>
+                <accordion-heading>
+                    <h4 class="accordion-title">Onde será realizado o evento?</h4>
+                    <span class="fa fa-plus-circle pull-right"></span>
+                </accordion-heading>
+                <p>O ASP.NET Brasil Conference 2015 será no auditório da FIAP que fica na Av. Lins de Vasconcelos, 1264, 8º andar. Veja a seção localização para ver o mapa do evento.</p>
+            </accordion-group>
+            <accordion-group>
+                <accordion-heading>
+                    <h4 class="accordion-title">Que serviços não estão inclusos na minha inscrição?</h4>
+                    <span class="fa fa-plus-circle pull-right"></span>
+                </accordion-heading>
+                <p>Na sua inscrição não estão inclusas as despesas com hospedagem, transporte, almoço ou jantar.</p>
+            </accordion-group>
+           
+        </accordion>
+    </div>
+    <div class="col-sm-6">
+        <accordion close-others="oneAtATime">
+            <accordion-group>
+                <accordion-heading>
+                    <h4 class="accordion-title">Qual o aeroporto mais próximo do evento?</h4>
+                    <span class="fa fa-plus-circle pull-right"></span>
+                </accordion-heading>
+                <p>
+                    O aeroporto mais próximo é o Aeroporto de Congonhas que fica cerca de 8,7 KM do local do evento, mas existe o Aeroporto Internacional de Guarulhos (Cumbica) que fica a 27 KM de distância da FIAP.
+                </p>
+                <p>Para quem optar por descer em Congonhas a melhor opção para chegar ao evento é pegar um táxi.</p>
+                <p>
+                    Para quem optar descer em Guarulhos existem duas opções mais econômicas que um táxi para chegar até o local do evento:<br />
+                    1) Pegar um ônibus executivo gratuito de translado da companhia aérea (verificar disponibilidade no site da companhia) para Congonhas e de lá pegar um táxi para o evento.
+                    <br />2) Pegar um ônibus executivo da empresa <a href="http://www.airportbusservice.com.br/" target="_blank">Airport Bus Service</a>, descer na Av. Paulista e de lá se deslocar de táxi para o evento.
+                </p>
+            </accordion-group>
+            <accordion-group>
+                <accordion-heading>
+                    <h4 class="accordion-title">Quais os hoteis mais recomendados?</h4>
+                    <span class="fa fa-plus-circle pull-right"></span>
+                </accordion-heading>
+                <p>
+                    Os mais recomendados em termos de custo/benefício são: <a href="http://www.accorhotels.com/pt/hotel-3531-ibis-budget-sao-paulo-paraiso/index.shtml" target="_blank">Hotel Ibis Budget</a> e <a href="http://www.hotelestacaoparaiso.com.br/" target="_blank">Hotel Estação Paraíso</a>.
+                </p>
+                <p>
+                    Existem outras opções boas de hoteis que fiquem mais próximos ao evento, que podem ser visto a partir deste <a href="https://goo.gl/maps/H9PVv" target="_blank">mapa</a>.
+                </p>
+            </accordion-group>
+            <accordion-group>
+                <accordion-heading>
+                    <h4 class="accordion-title">Como faço para chegar ao evento?</h4>
+                    <span class="fa fa-plus-circle pull-right"></span>
+                </accordion-heading>
+                <p>
+                    É possível chegar ao evento de carro, ônibus ou metrô:
+                </p>
+                <p>Para quem vai de carro existem algumas opções de estacionamento na própria Av. Lins de Vasconcelos, opções mais próximas são: Lins Estacionamento, Cg Parking e Singular Park.</p>
+                <p>Para quem vai de ônibus existem as opções que passam na frente da FIAP, como as linhas: 274P-10, 476G-41, 477A-10, 478P-10, 574A-10, 874T-10, 4111-10, 4112-10, 4113-10 e 4115-10. Para mais informações consulte o site da <a href="http://www.sptrans.com.br/itinerarios/" target="_blank">SP Trans</a>.</p>
+                <p>Para quem vai de metrô a opação mais próxima é a Estação Ana Rosa da Linha 1-Azul que fica a cerca de 2 KM da FIAP.</p>
+            </accordion-group>
+            <accordion-group>
+                <accordion-heading>
+                    <h4 class="accordion-title">Quais as opções de restaurantes mais próximos?</h4>
+                    <span class="fa fa-plus-circle pull-right"></span>
+                </accordion-heading>
+                <p>
+                    Existem diversos restaurantes próximos ao local do evento ASP.NET Brasil Conference 2015, veja no <a href="https://goo.gl/maps/YRgl5" target="_blank">mapa</a> quais os restaurantes mais próximos e programe-se.
+                </p>
+            </accordion-group>
+        </accordion>
     </div>
 </section>
