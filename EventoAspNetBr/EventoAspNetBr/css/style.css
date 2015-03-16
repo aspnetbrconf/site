@@ -297,7 +297,13 @@ input[type='submit']:active, button:active  {
 	padding: 40px 0 20px 0;
 }
 
+.pricing-table > .background-gray {
+    background-color: #bbbac0;
+}
 
+.table-features > .background-gray {
+    color: #bbbac0 !important;
+}
 
 /*--------------------
 Main Slider ========*/
