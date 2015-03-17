@@ -119,6 +119,7 @@
     <Content Include="js\jquery-2.1.3.min.js" />
     <Content Include="js\jquery-2.1.3.min.map" />
     <None Include="Properties\PublishProfiles\system.pubxml" />
+    <Content Include="smtp.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
