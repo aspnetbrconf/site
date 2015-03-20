@@ -279,18 +279,21 @@ input[type='submit']:active, button:active  {
 }
 
 #footer {
-	position: relative;
     float: left;
     width: 100%;
-    min-height: 300px;
-    margin-top: -100px;
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
-	padding: 0 15px;
+	background: #2e6da4;
+	height: 30px;
+	position: relative;
 	width: 100%;
+    text-align: center;
+
+    font-size: 1.6rem;
+    color: #ffffff;
+	line-height: 1.6em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .footer section {
