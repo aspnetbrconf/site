@@ -21,6 +21,17 @@
                 document.onscroll = scroll;
             };
 
+            // FlexSlider
+            var slider = function () {
+                setTimeout(function () {
+                    $('.flexslider').flexslider({
+                        noCSS: true,
+                        touch: true,
+                        directionNav: false,
+                        animation: "fade"
+                    });
+                }, 500);
+            };
 
             // Align Slider Horizontally
             var mainSliderAlign = function () {
@@ -96,11 +107,13 @@
             var vm = this;
 
             vm.init = function () {
+                
                 menuSticky();
                 mainSlider();
                 mainSliderAlign();
                 navigation();
                 carousel();
+                slider();
                 apps();
             };
 
