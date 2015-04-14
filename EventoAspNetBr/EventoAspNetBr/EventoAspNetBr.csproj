@@ -103,6 +103,7 @@
     <Content Include="img\Alexandre-Tarifa.jpg" />
     <Content Include="img\Andre-Baltieri.jpg" />
     <Content Include="img\Eduardo-Pires.jpg" />
+    <Content Include="img\Fabricio-Sanchez.jpg" />
     <Content Include="img\Giovanni-Bassi.jpg" />
     <Content Include="img\logo-aspnetbr.png" />
     <Content Include="img\premios-lumia.png" />
@@ -111,6 +112,12 @@
     <Content Include="img\Rodrigo-Kono.jpg" />
     <Content Include="img\slides\main-slide-1.jpg" />
     <Content Include="img\bg.png" />
+    <Content Include="img\sponsor_2pc.png" />
+    <Content Include="img\sponsor_eduardopires.png" />
+    <Content Include="img\sponsor_fcamara.png" />
+    <Content Include="img\sponsor_intel.png" />
+    <Content Include="img\sponsor_lambda3.png" />
+    <Content Include="img\sponsor_microsoft.png" />
     <Content Include="img\ul.png" />
     <Content Include="img\Victor-Cavalcante.jpg" />
     <Content Include="img\Waldyr-Felix.jpg" />
