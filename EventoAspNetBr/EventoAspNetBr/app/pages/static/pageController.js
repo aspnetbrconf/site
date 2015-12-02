@@ -1,7 +1,7 @@
 ﻿(function () {
     angular
         .module('app')
-        .controller('pageController', [function () {
+        .controller('pageController', [function ($sce) {
 
             // Sticky Menu
             var menuSticky = function () {
@@ -106,8 +106,12 @@
 
             var vm = this;
 
+            vm.trustUrl = function(url){
+                return $sce.trustAsResourceUrl(url);
+            };
+
             vm.init = function () {
-                
+
                 menuSticky();
                 mainSlider();
                 mainSliderAlign();
